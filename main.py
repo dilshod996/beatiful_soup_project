@@ -11,6 +11,7 @@ get_movie = soup.find_all(name="h3", class_="title")
 for text in get_movie:
     text_name = text.getText()
     all_movies.append(text_name)
+# movie names on the list
 print(all_movies)
 with open("movies.txt", "w") as file:
     for movie in all_movies:
